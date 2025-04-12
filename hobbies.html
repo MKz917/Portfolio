@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies & Interests - Ji Ming Kiat</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="css/style1.css"> <!-- Default theme (style1) -->
+    <script>
+        function switchTheme() {
+            var currentTheme = document.getElementById('theme-stylesheet').getAttribute('href');
+            if (currentTheme == 'css/style1.css') {
+                document.getElementById('theme-stylesheet').setAttribute('href', 'css/style2.css');
+            } else {
+                document.getElementById('theme-stylesheet').setAttribute('href', 'css/style1.css');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Hobbies & Interests</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="educational.html">Educational Background</a></li>
+                <li><a href="skills.html">Skills</a></li>
+				<li><a href="event.html">Event</a></li>
+            </ul>
+        </nav>
+        <button onclick="switchTheme()">Switch Themes</button> <!-- Button to switch themes -->
+    </header>
+
+    <main>
+        <section id="drawing">
+            <h2>Drawing~</h2>
+            <p>Drawing is one of my biggest personal interests, allowing me to express creativity and bring my imagination to life. Whether sketching detailed portraits or anime characters, it provides a sense of fulfillment and relaxation. It’s also a great way to unwind and release daily stress, helping me stay focused and refreshed.</p>
+            <img src="image/artwork5.jpg" alt="Drawing 1" style="width: 300px; height: auto;">
+            <img src="image/artwork6.jpg" alt="Drawing 2" style="width: 300px; height: auto;">
+            <img src="image/artwork7.jpg" alt="Drawing 3" style="width: 300px; height: auto;">
+            <img src="image/artwork8.jpg" alt="Drawing 4" style="width: 300px; height: auto;">
+        </section>
+
+        <section id="gaming">
+            <h2>Gaming Time~</h2>
+            <p>Gaming is my way of diving into different worlds, challenging my skills, and enjoying immersive storytelling. Such as Honkai: Star Rails & Squad Busters. It’s also a great way to relax, unwind, and connect with friends through multiplayer adventures.</p>
+            <img src="image/gaming9.jpg" alt="Gaming Time" style="width: 500px; height: auto;">
+        </section>
+
+        <section id="cooking">
+            <h2>Cooking Time~</h2>
+            <p>I enjoy cooking in the kitchen, trying out new recipes and flavors to create delicious meals. Cooking is not just a necessity but also a fun and rewarding way to de-stress and express creativity.</p>
+            <img src="image/cooking10.jpg" alt="Cooking Time" style="width: 500px; height: auto;">
+        </section>
+
+        <section id="badminton">
+            <h2>Playing Badminton~</h2>
+            <p>Badminton is my favorite sport, keeping me active and energized while improving my reflexes and coordination. It’s also a great way to have fun with friends and relieve stress after a long day.</p>
+            <img src="image/badminton11.jpg" alt="Badminton" style="width: 500px; height: auto;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ji Ming Kiat. All rights reserved.</p>
+    </footer>
+</body>
+</html>

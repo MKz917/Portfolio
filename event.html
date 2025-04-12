@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Skills - Ji Ming Kiat</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="css/style1.css"> <!-- Default theme (style1) -->
+    <script>
+        function switchTheme() {
+            var currentTheme = document.getElementById('theme-stylesheet').getAttribute('href');
+            if (currentTheme == 'css/style1.css') {
+                document.getElementById('theme-stylesheet').setAttribute('href', 'css/style2.css');
+            } else {
+                document.getElementById('theme-stylesheet').setAttribute('href', 'css/style1.css');
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Event - SULAM Project</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="educational.html">Educational Background</a></li>
+                <li><a href="skills.html">Skills</a></li>
+				<li><a href="event.html">Event</a></li>
+            </ul>
+        </nav>
+        <button onclick="switchTheme()">Switch Themes</button> 
+</header>
+
+<section class="description">
+    <p>
+        As part of the <strong>SULAM Project</strong> (Service Learning Malaysia – University for Society), 
+        I proudly served as a committee member of the <strong>Marketing & Promotion Department</strong>. 
+        My responsibilities included promoting the project to the public, managing social media outreach, 
+        designing promotional materials, and coordinating marketing strategies with the team. 
+        Through this role, I strengthened my communication, creativity, and teamwork skills while contributing 
+        to the success and visibility of the project.
+    </p>
+</section>
+
+<section class="gallery">
+    <img src="image/event1.jpg" alt="SULAM Event Photo 1" style="width: 600px; height: auto;">
+    <img src="image/event2.jpg" alt="SULAM Event Photo 2" style="width: 600px; height: auto;">
+    <img src="image/event3.jpg" alt="SULAM Event Photo 3" style="width: 600px; height: auto;">
+</section>
+
+<section class="media">
+    <h2>Event Video Recap</h2>
+    <video controls>
+        <source src="image/sulam-video.mp4" type="video/mp4">
+    </video>
+</section>
+
+<footer>
+    <p>© 2025 Ji Ming Kiat - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

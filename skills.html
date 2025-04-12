@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Skills - Ji Ming Kiat</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="css/style1.css"> <!-- Default theme (style1) -->
+    <script>
+        function switchTheme() {
+            var currentTheme = document.getElementById('theme-stylesheet').getAttribute('href');
+            if (currentTheme == 'css/style1.css') {
+                document.getElementById('theme-stylesheet').setAttribute('href', 'css/style2.css');
+            } else {
+                document.getElementById('theme-stylesheet').setAttribute('href', 'css/style1.css');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Personal Skills</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="educational.html">Educational Background</a></li>
+                <li><a href="skills.html">Skills</a></li>
+				<li><a href="event.html">Event</a></li>
+            </ul>
+        </nav>
+        <button onclick="switchTheme()">Switch Themes</button> 
+    </header>
+
+    <main>
+        <section id="skills">
+            <h2>Skills Developed During Internship</h2>
+            <img src="image/picture13.jpg" alt="Internship Photo" style="width: 600px; height: auto;">
+
+            <p>During my internship at HHL Agency, I worked as an Administrative Assistant, where I gained hands-on experience in the insurance industry and developed essential administrative and customer service skills. My role required me to communicate with clients, assist in policy renewals, and ensure smooth daily operations within the agency.</p>
+
+            <h3>Key Responsibilities:</h3>
+            <ul>
+                <li>Assisting customers with insurance inquiries and policy renewals.</li>
+                <li>Processing and organizing insurance documents to ensure accuracy and compliance.</li>
+                <li>Coordinating with clients to provide updates and reminders about their policies.</li>
+            </ul>
+
+            <p>Through this experience, I enhanced my attention to detail, communication, and organizational skills while gaining a deeper understanding of insurance policies and customer relationship management. This internship also strengthened my ability to multitask and work efficiently in a dynamic environment.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ji Ming Kiat. All rights reserved.</p>
+    </footer>
+</body>
+</html>

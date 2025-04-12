@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ji Ming Kiat's ePortfolio</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="css/style1.css">
+    <script>
+        function switchTheme() {
+            var currentTheme = document.getElementById('theme-stylesheet').getAttribute('href');
+            if (currentTheme == 'css/style1.css') {
+                document.getElementById('theme-stylesheet').setAttribute('href', 'css/style2.css');
+            } else {
+                document.getElementById('theme-stylesheet').setAttribute('href', 'css/style1.css');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My ePortfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="educational.html">Educational Background</a></li>
+                <li><a href="skills.html">Skills</a></li>
+				<li><a href="event.html">Event</a></li>
+            </ul>
+        </nav>
+        <button onclick="switchTheme()">Switch Themes</button>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Hi, I'm Ji Ming Kiat</h2>
+            <p>I am a full-time Master in Information Technology Management (MITM) student. Welcome to my personal ePortfolio!</p>
+            <img src="image/picture1.jpg" alt="Ji Ming Kiat" style="width: 300px; height: auto;">
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ji Ming Kiat. All rights reserved.</p>
+    </footer>
+</body>
+</html>

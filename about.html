@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Ji Ming Kiat</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="css/style1.css"> <!-- Default theme (style1) -->
+    <script>
+        function switchTheme() {
+            var currentTheme = document.getElementById('theme-stylesheet').getAttribute('href');
+            if (currentTheme == 'css/style1.css') {
+                document.getElementById('theme-stylesheet').setAttribute('href', 'css/style2.css');
+            } else {
+                document.getElementById('theme-stylesheet').setAttribute('href', 'css/style1.css');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="educational.html">Educational Background</a></li>
+                <li><a href="skills.html">Skills</a></li>
+				<li><a href="event.html">Event</a></li>
+            </ul>
+        </nav>
+        <button onclick="switchTheme()">Switch Themes</button>
+    </header>
+
+    <main>
+        <section id="birthday">
+            <h2>About my Birthday</h2>
+            <p>I was born on September 17, 2001, under the meticulous and analytical sign of Virgo.</p>
+            <img src="image/picture2.png" alt="Birthday Photo" style="width: 400px; height: auto;">
+        </section>
+
+        <section id="myself">
+            <h2>About Myself</h2>
+            <p>A passionate and driven individual with a curiosity for technology, creativity, and personal growth.</p>
+            <img src="image/picture3.png" alt="Myself Photo" style="width: 400px; height: auto;">
+        </section>
+
+        <section id="hometown">
+            <h2>About my Hometown</h2>
+            <p>Proudly from Kuching, Sarawak, a vibrant city known for its rich culture, stunning landscapes, and warm hospitality.</p>
+            <img src="image/picture4.png" alt="Hometown Photo" style="width: 400px; height: auto;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ji Ming Kiat. All rights reserved.</p>
+    </footer>
+</body>
+</html>

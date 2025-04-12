@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Background - Ji Ming Kiat</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="css/style1.css"> 
+    <script>
+        function switchTheme() {
+            var currentTheme = document.getElementById('theme-stylesheet').getAttribute('href');
+            if (currentTheme == 'css/style1.css') {
+                document.getElementById('theme-stylesheet').setAttribute('href', 'css/style2.css');
+            } else {
+                document.getElementById('theme-stylesheet').setAttribute('href', 'css/style1.css');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Educational Background</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="educational.html">Educational Background</a></li>
+                <li><a href="skills.html">Skills</a></li>
+				<li><a href="event.html">Event</a></li>
+            </ul>
+        </nav>
+        <button onclick="switchTheme()">Switch Themes</button> 
+    </header>
+
+    <main>
+        <section id="education">
+            <h2>My Educational Journey</h2>
+            <img src="image/picture12.jpg" alt="Education Photo" style="width: 600px; height: auto;">
+
+            <ul>
+                <li><strong>Kindergarten Level</strong> -- Methodist Kindergarten Siburan (2006 - 2007)</li>
+                <li><strong>Primary School</strong> -- SJK (C) Chung Hua Siburan (2008 - 2013)</li>
+                <li><strong>Secondary School</strong> -- SMK Siburan (2014 - 2018)</li>
+                <li><strong>Pre-University Level</strong> -- SMK Tun Abdul Razak (2019 - 2020)</li>
+                <li><strong>Bachelor Degree Level</strong> -- University of Malaysia Sarawak (UNIMAS) (2021 - 2024)</li>
+                <li><strong>Master Degree Level</strong> -- University of Malaysia Sarawak (UNIMAS) (2024 - Present)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ji Ming Kiat. All rights reserved.</p>
+    </footer>
+</body>
+</html>
